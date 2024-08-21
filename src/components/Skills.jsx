@@ -26,7 +26,7 @@ const Skills = () => {
     { skillName: "Tailwind", percentage: 90 },
     { skillName: "Next.js", percentage: 70 },
     { skillName: "ASP.Net MVC", percentage: 60 },
-    { skillName: "RestFull API", percentage: 70 },
+    { skillName: "RestFull API", percentage: 50 },
   ];
 
   return (
