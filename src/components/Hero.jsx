@@ -6,10 +6,10 @@ const Hero = () => {
       <div className="custom-container">
       <h1 className="text-xl font-bold">basakkaradeniz</h1>
 
-        <img src="public/images/pattern-rings.svg" 
+        <img src="/images/pattern-rings.svg" 
         alt="" width={500} height={300} className="bg-transparent absolute left-0 top-32 z-1 overflow-hidden -ml-40 " />
 
-        <img src="public/images/pattern-circle.svg" alt="" width={150} height={150} 
+        <img src="/images/pattern-circle.svg" alt="" width={150} height={150} 
         className="bg-transparent absolute right-0 bottom-2/4 z-1 -mr-20" />
 
       <div className="flex gap-4">
