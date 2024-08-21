@@ -4,38 +4,53 @@ import ProjectCard from '../ProjectCard';
 const Projects = () => {
   const projects = [
     {
-      title: "DESIGN PORTFOLIO",
-      techStack: ["HTML", "CSS"],
+      title: "REACT PRODUCT LIST",
+      techStack: ["HTML", "CSS", "JAVASCRIPT"],
       imageUrl: "public/images/projects/productlist_img_1.png",
       hoverImageUrl: "public/images/projects/productlist_img_3.png",
       projectUrl: "#",
-      codeUrl: "#"
+      codeUrl: "https://github.com/basakrdnz/product_list_react"
     },
     {
-      title: "E-LEARNING LANDING PAGE",
+      title: "NEXT.JS LINKEDIN PAGE",
       techStack: ["HTML", "CSS"],
       imageUrl: "public/images/projects/linkedin_nextjs_img_1.png",
       hoverImageUrl: "public/images/projects/linkedin_nextjs_img_3.png",
       projectUrl: "#",
-      codeUrl: "#"
+      codeUrl: "https://github.com/basakrdnz/linkedin_profile_page_next"
     },
     {
-      title: "TODO WEB APP",
-      techStack: ["HTML", "CSS", "JAVASCRIPT"],
-      imageUrl: "/images/portfolio-image-3.png",
-      hoverImageUrl: "/images/portfolio-image-3-hover.png",
+      title: "NEXT.JS TRAVEL PAGE",
+      techStack: ["HTML", "CSS"],
+      imageUrl: "public/images/projects/nexttravel_img_1.png",
+      hoverImageUrl: "public/images/projects/nexttravel_img_2.png",
       projectUrl: "#",
-      codeUrl: "#"
+      codeUrl: "https://github.com/basakrdnz/Next-Travel-Example-Web-Page"
     },
     {
-      title: "ENTERTAINMENT WEB APP",
-      techStack: ["HTML", "CSS", "JAVASCRIPT"],
-      imageUrl: "/images/portfolio-image-4.png",
-      hoverImageUrl: "/images/portfolio-image-4-hover.png",
-      projectUrl: "#",
-      codeUrl: "#"
+      title: "NEXT.JS RICK & MORTY API PAGE",
+      techStack: ["HTML", "CSS", "JAVASCRIPT" , "API"],
+      imageUrl: "public/images/projects/rickmorty_img_2.png",
+      hoverImageUrl: "public/images/projects/rickmorty_img_1.png",
+      projectUrl: "https://rick-morty-next-api-page.vercel.app",
+      codeUrl: "https://github.com/basakrdnz/RickMorty_Next_Api_Page?tab=readme-ov-file"
     },
-
+    {
+      title: "SASS FIGMA HOME PAGE",
+      techStack: ["HTML", "CSS"],
+      imageUrl: "public/images/projects/sasshomepage_img_1.png",
+      hoverImageUrl: "public/images/projects/sasshomepage_img_2.png",
+      projectUrl: "#",
+      codeUrl: "https://github.com/basakrdnz/Saas-Website-Home-Page"
+    },
+    {
+      title: "NEXT.JS TICKET FORM PAGE",
+      techStack: ["HTML", "CSS", "JAVASCRIPT"],
+      imageUrl: "public/images/projects/ticketformpage_img_1.png",
+      hoverImageUrl: "public/images/projects/ticketprompage_img_2.png",
+      projectUrl: "#",
+      codeUrl: "https://github.com/basakrdnz/Ticket-Form-Page"
+    },
   ];
 
   return (
