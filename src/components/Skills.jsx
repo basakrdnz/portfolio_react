@@ -3,8 +3,8 @@ import React, { useState } from "react";
 const SkillCard = ({ skillName, percentage }) => {
   return (
     <div className="skill mb-6">
-      <h3 className="text-white font-bold text-xl mb-2">{skillName}</h3>
-      <div className="w-full bg-gray-700 rounded-full h-2.5">
+      <h3 className="font-bold text-xl mb-2">{skillName}</h3>
+      <div className="w-full bg-gray-700 rounded-full h-3">
         <div
           className="bg-emerald-400 h-2.5 rounded-full"
           style={{ width: `${percentage}%` }}
@@ -51,7 +51,7 @@ const Skills = () => {
       <div className="text-center mt-6">
         <button
           onClick={() => setShowMore(!showMore)}
-          className="bg-emerald-500 text-white font-bold px-4 py-2 rounded-full hover:bg-gray-500 transition duration-300"
+          className="bg-emerald-500 font-bold px-4 py-2 rounded-full hover:bg-gray-500 transition duration-300"
         >
           {showMore ? "Show Less" : "Show More"}
         </button>
