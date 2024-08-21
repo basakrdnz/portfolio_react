@@ -52,8 +52,6 @@ const Hero = () => {
         CONTACT ME
       </button>
       </div>
-      <div className="custom-line"></div>
-
     </section>
   );
 };

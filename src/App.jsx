@@ -1,15 +1,18 @@
 import React from 'react';
 import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
+import Skills from './components/Skills';
 import Contact from './components/Contact';
+import Projects from './components/Projects';
 
 function App() {
   return (
     <div className="App custom-container font-spacegrotesk">
       <Hero />
-      {/* <About /> */}
-      <Projects />
+      <div className="custom-line"></div>
+      <Skills />
+      <div className="custom-line"></div>
+      <Projects></Projects>
+      <div className="custom-line"></div>
       <Contact />
     </div>
   );
