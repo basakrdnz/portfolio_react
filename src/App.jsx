@@ -13,7 +13,7 @@ function App() {
       <div className="custom-line"></div>
       <Projects></Projects>
       <div className="custom-line"></div>
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 }
