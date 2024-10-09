@@ -35,7 +35,7 @@ const ProjectCard = ({ title, techStack, imageUrl, hoverImageUrl, projectUrl, co
           href={codeUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xl border-b-2 border-emerald-400 hover:border-emerald-600"
+          className="text-xl border-b-2 border-emerald-400 rounded-lg hover:border-emerald-600"
         >
           VIEW CODE
         </a>

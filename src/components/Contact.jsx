@@ -58,7 +58,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="NAME"
-                className="bg-transparent border-b border-gray-500 p-3 text-white focus:outline-none focus:border-emerald-500 transition duration-300"
+                className="bg-transparent rounded-md border-b-2 border-emerald-500 p-3 text-white focus:outline-none focus:border-emerald-500 transition duration-300"
                 required
               />
               <input
@@ -67,7 +67,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="EMAIL"
-                className="bg-transparent border-b border-gray-500 p-3 text-white focus:outline-none focus:border-emerald-500 transition duration-300"
+                className="bg-transparent rounded-md border-b-2 border-emerald-500 p-3 text-white focus:outline-none focus:border-emerald-500 transition duration-300"
                 required
               />
               <textarea
@@ -75,7 +75,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="MESSAGE"
-                className="bg-transparent border-b border-gray-500 p-3 text-white focus:outline-none focus:border-emerald-500 transition duration-300 h-32"
+                className="bg-transparent rounded-md border-b-2 border-emerald-500 p-3 text-white focus:outline-none focus:border-emerald-500 transition duration-300 h-32"
                 required
               ></textarea>
               <button
