@@ -23,11 +23,21 @@ app.post('/send-email', (req, res) => {
   });
   
   const mailOptions = {
-    from: email, // Formdan gelen email
-    to: 'basak.karadeniz0@gmail.com',  // Kendi email adresinizi buraya yazın
-    subject: `New message from ${name}`,  // Konu
-    text: message,  // Mesaj içeriği
+    from: `${email}`, // Gönderenin e-posta adresi (formdan gelen e-posta)
+    to: 'basak.karadeniz0@gmail.com',  // E-postanın ulaşacağı adres (kendi e-posta adresiniz)
+    subject: `New message from ${name}`,  // Konu: formdan gelen kişinin adıyla dinamik başlık
+    text: `
+      You have received a new message from your contact form.
+  
+      Sender Name: ${name}
+      Sender Email: ${email}
+  
+      Message: 
+      ${message}
+  
+      `,  // Mesaj içeriği, gönderen bilgileri ve formdan gelen mesaj
   };
+  
 
   // E-posta gönderimi
   transporter.sendMail(mailOptions, (error, info) => {

@@ -91,8 +91,22 @@ const Contact = () => {
             </form>
             {/* Form gönderim durumu */}
             {status && (
-              <p className="mt-4 text-emerald-400">{status}</p>
-            )}
+            <p
+              className="mt-6 rounded-xl w-1/2 m-auto text-gray-900"
+              style={{
+                animation: "expandAndShrink 1s ease-in-out forwards, rainbow 3s linear infinite",  // Hem genişleme hem renk animasyonu
+                background: "linear-gradient(270deg, #ff7eb9, #ff758c, #c8a2c8, #79c8ff, #ffcc70)",  // Gökkuşağı renkleri
+                backgroundSize: "400% 400%",  // Animasyon için büyük arka plan boyutu
+                transformOrigin: "center",  // Ortadan genişleme
+                color: "#fff",  // Yazı rengini beyaz yap
+                padding: "10px",  // Daha belirgin olması için padding
+                textAlign: "center",  // Ortaya hizalama
+              }}
+            >
+              {status}
+            </p>
+          )}
+    
           </div>
         </div>
       </div>
