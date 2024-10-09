@@ -67,7 +67,7 @@ const Hero = () => {
           <div className="flex flex-col text-center md:text-left gap-8 md:max-w-xl">
             <h1 className="text-3xl md:text-6xl font-bold">
               Nice to meet you! I’m {" "} 
-              <b className="border-b-2 border-emerald-400 my-6 bg-transparent">
+              <b className="border-b-4 border-emerald-500 my-6 bg-transparent">
                 Basak Karadeniz
               </b>
               .

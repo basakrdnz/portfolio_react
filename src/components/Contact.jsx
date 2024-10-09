@@ -36,22 +36,22 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-zinc-800 my-40">
+    <section className="bg-zinc-800 my-20 rounded-xl">
       {/* CSS'leri buradaki div'e uyguladık */}
-      <div className="p-8 max-w-screen-xl mx-auto my-12">
-        <div className="flex flex-col lg:flex-row justify-between gap-8">
+      <div className="p-8 max-w-screen-xl mx-auto my-12 bg-transparent">
+        <div className="flex flex-col lg:flex-row justify-between gap-8 bg-transparent">
           {/* Sol Taraf: Başlık ve Açıklama */}
-          <div className="lg:w-1/2 text-center lg:text-left">
-            <h2 className="text-white text-4xl font-extrabold mb-6 md:text-6xl ">Contact</h2>
-            <p className="text-gray-400 mb-8">
+          <div className="lg:w-1/2 text-center lg:text-left bg-transparent">
+            <h2 className="text-white text-4xl font-extrabold mb-6 md:text-6xl bg-transparent ">Contact</h2>
+            <p className="text-gray-400 mb-8 bg-transparent">
               I would love to hear about your project and how I could help. Please
               fill in the form, and I’ll get back to you as soon as possible.
             </p>
           </div>
 
           {/* Sağ Taraf: Form */}
-          <div className="lg:w-1/2">
-            <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+          <div className="lg:w-1/2 bg-transparent">
+            <form onSubmit={handleSubmit} className="flex bg-transparent flex-col gap-6">
               <input
                 type="text"
                 name="name"

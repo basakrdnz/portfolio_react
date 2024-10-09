@@ -2,16 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0 !important;
-  padding: 0;
-  box-sizing: border-box;
-
-}
-
-.App{
-    background-color: black;
-    color:white;
+*{
+  background-color:rgb(61, 18, 99);
+  color:#ffffff
 }
 
 
