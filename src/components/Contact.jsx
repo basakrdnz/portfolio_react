@@ -7,6 +7,8 @@ const Contact = () => {
     message: "",
   });
 
+  const [status, setStatus] = useState(""); // Form gönderim durumu
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -20,12 +22,15 @@ const Contact = () => {
     })
       .then((response) => {
         if (response.ok) {
-          alert("Email başarıyla gönderildi!");
+          setStatus("Email başarıyla gönderildi!"); // Başarılı mesajı
+          setFormData({ name: "", email: "", message: "" }); // Formu sıfırla
         } else {
-          alert("Bir hata oluştu, lütfen tekrar deneyin.");
+          setStatus("Bir hata oluştu, lütfen tekrar deneyin."); // Hata mesajı
         }
       })
-      .catch((error) => console.error("Hata:", error));
+      .catch((error) => {
+        setStatus("Sunucu hatası: " + error.message); // Hata mesajı
+      });
   };
 
   const handleChange = (e) => {
@@ -37,7 +42,6 @@ const Contact = () => {
 
   return (
     <section className="bg-zinc-800 my-20 rounded-xl">
-      {/* CSS'leri buradaki div'e uyguladık */}
       <div className="p-8 max-w-screen-xl mx-auto my-12 bg-transparent">
         <div className="flex flex-col lg:flex-row justify-between gap-8 bg-transparent">
           {/* Sol Taraf: Başlık ve Açıklama */}
@@ -85,6 +89,10 @@ const Contact = () => {
                 Send Message
               </button>
             </form>
+            {/* Form gönderim durumu */}
+            {status && (
+              <p className="mt-4 text-emerald-400">{status}</p>
+            )}
           </div>
         </div>
       </div>
