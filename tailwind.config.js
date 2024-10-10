@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        spacegrotesk: ['SpaceGrotesk', 'sans-serif'],
+        sans: ['Shantell Sans', 'sans-serif'], // Shantell Sans'ı varsayılan sans-serif ailesine ekledik
       },
     },
   },

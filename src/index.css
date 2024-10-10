@@ -2,6 +2,127 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Navbar container, sabit ve sürüklenebilir */
+.navbar {
+  position: fixed; /* Sabit kalsın */
+  top: 100px;
+  left: 20px;
+  cursor: grab;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.3); /* Gri, opaklık düşük */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 1000; /* Üstte kalsın */
+  pointer-events: auto; /* Diğer öğelerle etkileşimde değil */
+}
+
+/* Dikdörtgen arka planı */
+.bg-circle {
+  position: absolute;
+  top: -50px; /* Yukarı doğru taşır */
+  left: -100px; /* Sola doğru taşır */
+  width: 250px; /* Genişliği */
+  height: 300px; /* Yüksekliği */
+  background-color: rgba(255, 255, 255, 0.2); /* Şeffaf beyaz */
+  border-radius: 20px; /* Kenarları yuvarlak */
+  z-index: -1; /* Arkada kalsın */
+}
+
+/* Sürükleme sırasında tutma efekti */
+.navbar:active {
+  cursor: grabbing;
+  background-color: rgba(128, 128, 128, 0.5); /* Sürükleme sırasında daha görünür gri */
+}
+
+/* Hover ile genişleme */
+.navbar:hover {
+  transform: scale(1.1); /* Hover'da menü genişler */
+}
+
+/* Navigation items */
+.nav-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  margin: 10px 0;
+  position: relative;
+}
+
+.bookmark {
+  display: block;
+  width: 10px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  transition: height 0.3s ease, background-color 0.3s ease;
+}
+
+/* Yazı Hover'da görünür */
+.bookmark::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  opacity: 0;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.bookmark:hover::before {
+  opacity: 1;
+}
+
+/* Hover'da çizgi uzasın ve turkuaz renge dönsün */
+.bookmark:hover {
+  height: 80px;
+  background-color: #40e0d0;
+}
+
+/* Hover'da el işareti */
+.bookmark:hover {
+  cursor: pointer;
+}
+
+/* Hover sırasında dalgalanan yuvarlak çember efekti */
+.bookmark:hover::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(64, 224, 208, 0.2); /* Hafif turkuaz */
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  animation: ripple 1s infinite;
+  pointer-events: none; /* Çember, tıklanamaz */
+}
+
+@keyframes ripple {
+  0% {
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) scale(1.5);
+    opacity: 0;
+  }
+}
+
+
 *{
   background-color:rgb(61, 18, 99);
   color:#ffffff
