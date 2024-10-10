@@ -4,7 +4,8 @@
 
 /* Navbar container, sabit ve sürüklenebilir */
 .navbar {
-  position: fixed; /* Sabit kalsın */
+  position: fixed;
+  background-color: transparent;
   top: 100px;
   left: 20px;
   cursor: grab;
@@ -19,6 +20,7 @@
 
 /* Dikdörtgen arka planı */
 .bg-circle {
+  
   position: absolute;
   width: 150px; /* Genişliği */
   height: 300px; /* Yüksekliği */
@@ -58,6 +60,7 @@
   display: block;
   width: 20px;
   height: 70px;
+  
   background-color: #fff;
   border-radius: 10px;
   position: relative;
@@ -86,7 +89,7 @@
 .bookmark:hover {
   height:95px;
   padding: 15px;
-  background-color:cadetblue;
+  background-color:#c77dff;
   font-size: large;
 }
 
