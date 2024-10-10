@@ -10,11 +10,11 @@ function App() {
     <div className="App custom-container font-spacegrotesk">
       <NavBar />
       <Hero />
-      <div className="custom-line"></div>
+      <div className="custom-line" id='Skills'></div>
       <Skills />
-      <div className="custom-line"></div>
+      <div className="custom-line" id='Projects'></div>
       <Projects></Projects>
-      <div className="custom-line"></div>
+      <div className="custom-line" id='Contact'></div>
       <Contact />
     </div>
   );

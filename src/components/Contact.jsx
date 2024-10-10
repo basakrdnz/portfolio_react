@@ -44,7 +44,7 @@ const Contact = () => {
     <section className="bg-zinc-800 my-20 rounded-xl">
       <div className="p-8 max-w-screen-xl mx-auto my-12 bg-transparent">
         <div className="flex flex-col lg:flex-row justify-between gap-8 bg-transparent">
-          {/* Sol Taraf: Başlık ve Açıklama */}
+          {/* Sol Taraf */}
           <div className="lg:w-1/2 text-center lg:text-left bg-transparent justify-center m-auto">
             <h2 className="text-white text-4xl font-extrabold mb-6 md:text-6xl bg-transparent ">Contact Me!</h2>
             <p className="text-gray-400 mb-8 bg-transparent">
@@ -52,7 +52,7 @@ const Contact = () => {
             </p>
           </div>
 
-          {/* Sağ Taraf: Form */}
+          {/* Sağ Taraf */}
           <div className="lg:w-1/2 bg-transparent">
             <form onSubmit={handleSubmit} className="flex bg-transparent flex-col gap-6">
               <input

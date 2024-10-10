@@ -37,16 +37,19 @@ const NavBar = () => {
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp} // Fare menü dışına çıkarsa bırakmayı durdurur
     >
-      <div className="bg-circle"></div> {/* Arka plandaki dikdörtgen */}
+      <div className="bg-circle"></div>
       <ul className="nav-items">
         <li className="nav-item">
-          <a href="#Hero" className="bookmark" data-text="About"></a>
+          <a href="#" className="bookmark" data-text="About"></a>
         </li>
         <li className="nav-item">
           <a href="#Skills" className="bookmark" data-text="Skills"></a>
         </li>
         <li className="nav-item">
-          <a href="#section3" className="bookmark" data-text="Contact"></a>
+          <a href="#Projects" className="bookmark" data-text="Projects"></a>
+        </li>
+        <li className="nav-item">
+          <a href="#Contact" className="bookmark" data-text="Contact"></a>
         </li>
       </ul>
     </nav>

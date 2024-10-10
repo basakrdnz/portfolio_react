@@ -23,8 +23,8 @@
   
   position: absolute;
   width: 150px; /* Genişliği */
-  height: 300px; /* Yüksekliği */
-  background-color: rgba(255, 255, 255, 0.2); /* Şeffaf beyaz */
+  height: 400px; /* Yüksekliği */
+  background-color: rgba(174, 198, 239, 0.2); /* Şeffaf beyaz */
   border-radius: 20px; /* Kenarları yuvarlak */
   z-index: -1; /* Arkada kalsın */
 }
