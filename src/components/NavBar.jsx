@@ -40,10 +40,10 @@ const NavBar = () => {
       <div className="bg-circle"></div> {/* Arka plandaki dikdörtgen */}
       <ul className="nav-items">
         <li className="nav-item">
-          <a href="#section1" className="bookmark" data-text="About"></a>
+          <a href="#Hero" className="bookmark" data-text="About"></a>
         </li>
         <li className="nav-item">
-          <a href="#section2" className="bookmark" data-text="Projects"></a>
+          <a href="#Skills" className="bookmark" data-text="Skills"></a>
         </li>
         <li className="nav-item">
           <a href="#section3" className="bookmark" data-text="Contact"></a>

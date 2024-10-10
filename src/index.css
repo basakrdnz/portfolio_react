@@ -8,10 +8,7 @@
   top: 100px;
   left: 20px;
   cursor: grab;
-  width: 80px;
   height: 80px;
-  border-radius: 50%;
-  background-color: rgba(128, 128, 128, 0.3); /* Gri, opaklık düşük */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,9 +20,7 @@
 /* Dikdörtgen arka planı */
 .bg-circle {
   position: absolute;
-  top: -50px; /* Yukarı doğru taşır */
-  left: -100px; /* Sola doğru taşır */
-  width: 250px; /* Genişliği */
+  width: 150px; /* Genişliği */
   height: 300px; /* Yüksekliği */
   background-color: rgba(255, 255, 255, 0.2); /* Şeffaf beyaz */
   border-radius: 20px; /* Kenarları yuvarlak */
@@ -35,7 +30,6 @@
 /* Sürükleme sırasında tutma efekti */
 .navbar:active {
   cursor: grabbing;
-  background-color: rgba(128, 128, 128, 0.5); /* Sürükleme sırasında daha görünür gri */
 }
 
 /* Hover ile genişleme */
@@ -46,21 +40,24 @@
 /* Navigation items */
 .nav-items {
   list-style: none;
-  padding: 0;
   margin: 0;
+  top: -50px; /* Yukarı doğru taşır */
+  left: -100px; /* Sola doğru taşır */
+  background-color: transparent;
   display: flex;
   flex-direction: column;
 }
 
 .nav-item {
-  margin: 10px 0;
+  margin: 10px 10px;
+  background-color: transparent;
   position: relative;
 }
 
 .bookmark {
   display: block;
-  width: 10px;
-  height: 50px;
+  width: 20px;
+  height: 70px;
   background-color: #fff;
   border-radius: 10px;
   position: relative;
@@ -87,8 +84,10 @@
 
 /* Hover'da çizgi uzasın ve turkuaz renge dönsün */
 .bookmark:hover {
-  height: 80px;
-  background-color: #40e0d0;
+  height:95px;
+  padding: 15px;
+  background-color:cadetblue;
+  font-size: large;
 }
 
 /* Hover'da el işareti */
@@ -104,7 +103,7 @@
   top: 50%;
   width: 100px;
   height: 100px;
-  background-color: rgba(64, 224, 208, 0.2); /* Hafif turkuaz */
+  background-color:gray;
   border-radius: 50%;
   transform: translateX(-50%) translateY(-50%);
   animation: ripple 1s infinite;
