@@ -3,6 +3,9 @@ My Portfolio is a fully responsive and interactive web application built using *
 
 This portfolio features key sections including **Hero, Skills, Projects**, and **Contact** to provide a structured and visually appealing presentation of my work. It's designed with simplicity and functionality in mind, ensuring a seamless user experience across all devices.
 
+# Live Demo
+Check out the live version of the portfolio [here](https://portfolio-react-git-main-basaks-projects.vercel.app/).
+
 # Features
 - **Responsive Design**: The portfolio is optimized for both desktop and mobile devices, ensuring an accessible experience for all users.
 - **Dynamic Components**: Each section is a separate React component, making the application modular and easy to maintain.
@@ -25,4 +28,11 @@ This portfolio features key sections including **Hero, Skills, Projects**, and *
 # Additional Notes
 - The project started with a **mobile-first** design approach, later expanded to larger screen sizes.
 - I used a **one-page web layout** with visually appealing component organization and styling.
-- Common components were reused across the project to keep the code modular and efficient.
+
+# Screenshots
+
+- ![Portfolio Screenshot 1](./public/images/portf3.png)
+  
+- ![Portfolio Screenshot 2](./public/images/portf2.png)
+  
+- ![Portfolio Screenshot 3](./public/images/portf1.png)
