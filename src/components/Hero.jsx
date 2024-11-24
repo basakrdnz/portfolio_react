@@ -49,6 +49,18 @@ const Hero = () => {
         className="hover:opacity-80 transition duration-300"
       />
     </a>
+    <a
+      href="https://medium.com/@basak.karadeniz0"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        width={30}
+        src="/images/medium.png"
+        alt="GitHub"
+        className="hover:opacity-80 transition bg-white rounded-full duration-300"
+      />
+    </a>
   </div>
 </div>
 
